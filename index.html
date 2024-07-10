@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap file -->
+    <style>
+      @import url("./css/bootstrap.min.css") layer(bootstrap);
+    </style>
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- loading placeholder -->
+    <div id="loading">
+      <span class="loader"></span>
+    </div>
+    <!-- header image -->
+    <header></header>
+    <!-- navbar -->
+    <div class="container position-sticky top-0 z-3">
+      <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container-fluid">
+          <div class="navbar-brand nav-logo d-flex m-0 align-items-center">
+            <span class="d-block nav-logo-image"
+              ><img
+                src="images/logo-sm.png"
+                class="w-100 d-block"
+                alt="page logo"
+            /></span>
+            <h1 class="text-uppercase mb-0 ms-2">game reviews</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="mainNavList">
+              <li class="nav-item">
+                <button class="nav-link text-uppercase active" value="mmorpg">
+                  mmorpg
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-uppercase" value="shooter">
+                  shooter
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-uppercase" value="sailing">
+                  sailing
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-uppercase" value="permadeath">
+                  permadeath
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-uppercase" value="superhero">
+                  superhero
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-uppercase" value="pixel">
+                  pixel
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <!-- games -->
+      <section id="games">
+        <div class="container">
+          <div class="row gy-3" id="gamesContainer"></div>
+        </div>
+      </section>
+      <!-- details -->
+      <section id="gameDetails">
+        <div class="container">
+          <div
+            class="details-header py-4 d-flex justify-content-between align-items-center"
+          >
+            <h1 class="text-capitalize">details header</h1>
+            <span class="close-icon" id="closeDetails">
+              <i class="fa-solid fa-x"></i>
+            </span>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-md-4">
+                <img id="detailsThumbnail" src="" class="w-100" alt="" />
+              </div>
+              <div class="col-md-8">
+                <div class="about-details">
+                  <h2 class="details-title">
+                    Title: <span id="detailsTitle"></span>
+                  </h2>
+                  <ul class="detail-information-list">
+                    <li>
+                      <span>Category: </span>
+                      <span
+                        class="badge information-badge"
+                        id="detailsGenera"
+                      ></span>
+                    </li>
+                    <li>
+                      <span>Platform: </span>
+                      <span
+                        class="badge information-badge"
+                        id="detailsPlatform"
+                      ></span>
+                    </li>
+                    <li>
+                      <span>Status: </span>
+                      <span class="badge information-badge">Live</span>
+                    </li>
+                  </ul>
+                  <p class="game-description" id="detailsDescription"></p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-warning text-white"
+                    id="detailsLink"
+                    target="_blank"
+                    >Show Game</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- jQuery js file -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js file -->
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
