@@ -166,6 +166,7 @@
         z-index: 9999;
         background-color: var(--body-color);
         padding-bottom: 10px;
+        display: none;
     }
     #gameDetails .about-details .details-title,
     #gameDetails .details-header h1 {
